@@ -1,0 +1,16 @@
+export enum messages {
+  UserCreationError = 'Unable to create user.',
+  LoginError = 'Unable to login.',
+  RefreshTokenError = 'Unable to get refresh token.',
+  ChannelNotFound = 'channel was not found.',
+  ChannelCreateError = 'Unable to create channel.',
+  ChannelDeleteError = 'Unable to delete channel.',
+  PackageNotFoundError = 'package was not found.',
+  PackageCreateError = 'Unable to create channel.',
+  PackageUpdateError = 'Unable to update package.',
+  PackageDeleteError = 'Unable to delete package.',
+  UserNotFoundError = 'User not found.',
+  UserUpdateError = 'Unable to update user.',
+  UserDeleteError = 'Unable to delete user.',
+  UserBadRequestError = 'Please provide a valid ID for the user.',
+}

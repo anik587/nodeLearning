@@ -1,0 +1,80 @@
+{
+  "name": "slm-v2",
+  "version": "1.0.0",
+  "description": "SLM version 2.0",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "start": "node ./dist/server.js",
+    "dev": "nodemon",
+    "test-app": "jest --verbose",
+    "test-unit": "jest --verbose --testPathIgnorePatterns=./tests/endpoints/* --runInBand",
+    "pretest": "eslint src/** --no-error-on-unmatched-pattern",
+    "lint-fix": "eslint --fix src/**"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "dependencies": {
+    "@types/express-rate-limit": "^5.1.0",
+    "axios": "^0.21.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "config": "^3.2.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-rate-limit": "^5.2.3",
+    "express-validator": "^6.7.0",
+    "express-winston": "^4.0.2",
+    "helmet": "^4.2.0",
+    "joi": "^17.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mysql2": "^2.2.5",
+    "qs": "^6.9.4",
+    "redis": "^3.0.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/config": "^0.0.36",
+    "@types/cors": "^2.8.8",
+    "@types/express": "^4.17.2",
+    "@types/jest": "^24.0.25",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/lodash": "^4.14.165",
+    "@types/redis": "^2.8.28",
+    "@types/supertest": "^2.0.8",
+    "@types/winston": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.9.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/habibbasher/slm-v2.git"
+  },
+  "keywords": [],
+  "author": "habib basher <hub0904010@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/habibbasher/slm-v2/issues"
+  },
+  "homepage": "https://gitlab.com/habibbasher/slm-v2#readme"
+}

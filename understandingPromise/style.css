@@ -1,0 +1,6 @@
+div{
+    text-transform: capitalize;
+    color: currentcolor;
+    text-shadow: 0 0 black;
+    font-size: 40px;
+}
